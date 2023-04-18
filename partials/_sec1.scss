@@ -1,0 +1,37 @@
+//sec1
+.sec1{
+    padding: 0 100px;
+    width: 100vw;
+    
+
+    .sec1_img_group{
+        display: flex;
+        justify-content: space-between;
+        height: 800px;
+
+        .sec1-img1 {
+            img{
+                width: 250px;
+                height: 400px;
+            }
+            
+        }
+
+        .sec1-img2 {
+            img{
+                width: 600px;
+                height: 800px;
+            }
+            
+        }
+        .sec1-img3 {
+            display: flex;
+            align-items: flex-end;
+
+            img{
+                width: 250px;
+                height: 400px;
+            }   
+        }
+    }
+}

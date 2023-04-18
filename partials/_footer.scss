@@ -1,0 +1,83 @@
+//FOTTER
+footer{
+    padding: 125px 0 155px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: $dark-color;
+    color: $white-color;
+
+    .contact__btn{
+        position: absolute;
+        z-index: 9;
+        //right: 300;
+        top:-100px;
+        //margin-bottom: 15px;
+        color:$white-color;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover{
+            
+            transform: translateY(-1rem);
+        }
+
+        i{
+            font-size: 3.5rem;
+            position: absolute;
+            color: $white-color;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 600;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            animation: spinText 5s linear infinite;
+
+            span{
+                position: absolute;
+                transform-origin: 0.3rem 5rem;
+            }
+        }
+    }
+
+    p{
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+    .email{
+        font-size: 64px;
+        color: $white-color;
+        font-family: 'Signika', sans-serif;
+        font-weight: 300;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: $white-color;
+            transition: all 1s ease;
+
+        }
+
+        &:hover:before{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 999;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    &.window-scroll{
+        background: $white-color;
+    }
+
+    img{
+        width: 200px;
+        height: 80px;
+    }
+
+    ul {
+        display:flex;
+        li{
+            display: inline-block;
+            margin: 0 25px;
+
+            a{
+                text-transform: uppercase;
+                position: relative;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    bottom: -22px;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: $black-color;
+                    transition: all 1s ease;
+                }
+                &:hover:before{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    /*-- only needed in  medium and small devices ---*/
+    button{
+        display: none;
+    }
+}
+
+/*----- MEDIA QUERIES (medium devices) ------*/
+
+@media screen and (max-width: 1024px){
+    header nav{
+        padding: 0;
+
+        ul{
+            display: none;
+            position: absolute;
+            right: 8%;
+            top: 5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $white-color;
+           
+            li{
+                display: flex;
+                width: 100%;
+                a{
+                    background-color: $white-color;
+                  
+                    height: 100%;
+                    padding: 2rem 3.5rem;
+                }
+            }
+        }
+
+        
+        
+        button{
+            display: inline-block;
+            background: transparent;
+            color: $black-color;
+            font-size: 2rem;
+            cursor: pointer;
+            border: none;
+            padding: 0 20px;
+
+            &#close__nav-btn{
+                display: none;
+            }
+        }
+        
+    }
+}

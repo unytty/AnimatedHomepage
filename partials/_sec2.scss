@@ -1,0 +1,37 @@
+//SEC2
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+     
+}
+
+.sec_text{
+    max-width: 500px;
+    h2{
+        text-transform: uppercase;
+    }
+    .sec_text_desc{
+        padding-left: 80px;
+        border-left: 2px solid rgba(0,0,0,0.07);
+
+        .sec_text_desc_p{
+            margin: 55px 0 40px;
+
+            p{
+                margin-bottom: 15px;
+                line-height: 28px;
+            }
+        }
+
+    }
+}
+
+.sec_img{
+    img{
+        width: 500px;
+        height: 700px;
+    }
+    
+
+}

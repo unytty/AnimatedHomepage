@@ -1,0 +1,30 @@
+.sec4{
+    padding: 100px;
+    text-align: center;
+
+    h3{
+        text-transform: uppercase;
+        padding: 0 70px;
+    }
+    .sec4_img_group{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        img{
+            width: 400px;
+            height: 600px;
+        }
+
+        .sec4_img2{
+            margin: 130px -50px 0;
+            z-index: 9;
+        }
+
+    }
+    .star{
+        position: absolute;
+        top: 250px;
+        right: 0;
+        left: 0;
+    }
+}

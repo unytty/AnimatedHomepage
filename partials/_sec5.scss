@@ -1,0 +1,16 @@
+.sec5{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay_text{
+        position: absolute;
+        h2{
+            text-transform: uppercase;
+        }
+    }
+    video{
+        width: 100%;
+    }
+}
